@@ -27,25 +27,7 @@ Console.WriteLine(publicKey);
 Console.WriteLine(publicPuTTYKey);
 ```
 
-## ECDsa Usage Example
-```csharp
-string privateKey;
-string publicKey;
-string publicPuTTYKey;
-
-using (var key = new ECDsaGenerator("nistP521"))
-{
-    privateKey = key.ToPrivateKey();
-    publicKey = key.ToPublicKey();
-    publicPuTTYKey = key.ToPuTTYPublicKey();
-}
-
-Console.WriteLine(privateKey);
-Console.WriteLine(publicKey);
-Console.WriteLine(publicPuTTYKey);
-```
-
-### Sample Output RSA
+### Output
 
 #### key.ToPrivateKey()
 ```text
@@ -74,7 +56,25 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCeKlFASaj9KjVWsHd
 1rhCwbJdElsCR30fDj4wbkO89x89MlP5Q== imported-key
 ```
 
-### Sample Output ECDsa nistP521
+## ECDsa Usage Example
+```csharp
+string privateKey;
+string publicKey;
+string publicPuTTYKey;
+
+using (var key = new ECDsaGenerator("nistP521"))
+{
+    privateKey = key.ToPrivateKey();
+    publicKey = key.ToPublicKey();
+    publicPuTTYKey = key.ToPuTTYPublicKey();
+}
+
+Console.WriteLine(privateKey);
+Console.WriteLine(publicKey);
+Console.WriteLine(publicPuTTYKey);
+```
+
+### Outuput
 
 #### key.ToPrivateKey()
 ```text
