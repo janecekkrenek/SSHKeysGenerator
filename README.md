@@ -74,7 +74,7 @@ Console.WriteLine(publicKey);
 Console.WriteLine(publicPuTTYKey);
 ```
 
-### Outuput
+### Output
 
 #### key.ToPrivateKey()
 ```text
